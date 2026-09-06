@@ -1,0 +1,40 @@
+name: Build Khedmati APK
+
+# كيخدم أوتوماتيكيا فسيرفرات GitHub (بلا ما تحتاج بيسي ديالك)
+# كل مرة كتزيد/تبدل ملف فالمشروع، غادي يبني ليك APK جاهز للتحميل
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch: {}   # كيخليك تشغلو يدويا من زر "Run workflow" فGitHub
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: تحميل الكود
+        uses: actions/checkout@v4
+
+      - name: تثبيت Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: تثبيت Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.0'
+          channel: 'stable'
+
+      - name: تثبيت المكتبات
+        run: flutter pub get
+
+      - name: بناء APK
+        run: flutter build apk --release
+
+      - name: رفع APK كملف تحميل
+        uses: actions/upload-artifact@v4
+        with:
+          name: khedmati-apk
+          path: build/app/outputs/flutter-apk/app-release.apk

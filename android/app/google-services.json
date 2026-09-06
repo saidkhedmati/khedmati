@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "620052351854",
+    "project_id": "khedmati-eda63",
+    "storage_bucket": "khedmati-eda63.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620052351854:android:04c6204177f42a9da14f7f",
+        "android_client_info": {
+          "package_name": "com.example.khedmati"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620052351854-ijka063d6rrpk0equ70lcfns0eats2mq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGMBnvR411lszMl-u0iogMxaPVnGwdsKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620052351854-ijka063d6rrpk0equ70lcfns0eats2mq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

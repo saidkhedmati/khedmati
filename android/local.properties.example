@@ -1,0 +1,8 @@
+# انسخ هاد الملف وسميه local.properties (بلا .example) وحط فيه المسارات ديال جهازك
+# فالعادة Flutter كيصاوب هاد الملف تلقائيا أول ما تدير "flutter pub get"،
+# فما خصكش تدير شي حاجة يدوي هنا إلا إيلا طلع ليك خطأ
+
+sdk.dir=/Users/YOUR_NAME/Library/Android/sdk
+flutter.sdk=/Users/YOUR_NAME/development/flutter
+flutter.versionName=1.0.0
+flutter.versionCode=1
