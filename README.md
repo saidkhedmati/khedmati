@@ -49,7 +49,7 @@ flutter doctor
 
 ### 2) خلق مشروع Flutter وحط فيه هاد الملفات
 
-دابا مجلد `android/` **معمر بالكامل** فهاد الزيب (applicationId = `com.khedmati.app`،
+دابا مجلد `android/` **معمر بالكامل** فهاد الزيب (applicationId = `com.example.khedmati`،
 Google Sign-In، الصلاحيات، اللوغو الحقيقي...). خاصك غير:
 
 ```bash
@@ -68,7 +68,7 @@ flutter create --org com.khedmati --project-name khedmati khedmati_temp
 > "متابعة مع Google" بشكل حقيقي (بما فيها الخطوة المهمة ديال SHA-1).
 >
 > ⚠️ خاص يكون عندك تطبيق Android جديد فـ Firebase بـ package name =
-> **com.khedmati.app** بالضبط (ماشي `com.example.khedmati`)، وحط
+> **com.example.khedmati** بالضبط (ماشي `com.example.khedmati`)، وحط
 > `google-services.json` فـ `android/app/google-services.json`.
 
 1. سير لـ https://console.firebase.google.com وخلق مشروع جديد اسمو "Khedmati"

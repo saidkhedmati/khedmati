@@ -101,7 +101,7 @@ cd android
 ```gradle
 // android/app/build.gradle
 defaultConfig {
-    applicationId "com.khedmati.app"   // 👈 خاصو يطابق بالضبط google-services.json
+    applicationId "com.example.khedmati"   // 👈 خاصو يطابق بالضبط google-services.json
 }
 ```
 
